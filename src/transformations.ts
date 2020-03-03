@@ -195,7 +195,7 @@ export function applyTransformations(object, args) {
   }
 
   for (const op in args) {
-    if (typeof args === 'object' && typeof args[name] !== undefined) {
+    if (typeof args === 'object' && typeof args[op] !== undefined) {
       // if (object === null)
       //   break;
 
