@@ -42,8 +42,8 @@ import {
   invertBy,
   keys,
   values,
-  omit
- } from 'lodash';
+  omit,
+} from 'lodash';
 
 function getType(v): String {
   return Object.prototype.toString
@@ -177,10 +177,10 @@ const transformations = {
 const opToExpectedType = (trans => {
   let result = {};
   for (const type in trans) {
-    if (trans.hasOwnProperty(type)) {
+    if (typeof trans === 'object' && typeof trans[type] !== undefined) {
       const names = trans[type];
       for (const name in names) {
-        if (names.hasOwnProperty(name)) {
+        if (typeof names === 'object' && typeof names[name] !== undefined) {
           result[name] = type;
         }
       }
@@ -195,7 +195,7 @@ export function applyTransformations(object, args) {
   }
 
   for (const op in args) {
-    if (args.hasOwnProperty(op)) {
+    if (typeof args === 'object' && typeof args[name] !== undefined) {
       // if (object === null)
       //   break;
 

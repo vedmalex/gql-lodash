@@ -10,7 +10,8 @@ export function filter(doc, data) {
     context: any,
     info: any,
   ) => {
-    if (root.hasOwnProperty(fieldName)) {
+    // console.log(root);
+    if (typeof root === 'object' && typeof root[fieldName] !== undefined) {
       return root[fieldName];
     } else {
       return root[info.resultKey];
