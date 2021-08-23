@@ -10,9 +10,9 @@
     "prepublish": "tsc --build tsconfig.json"
   },
   "dependencies": {
-    "gql-schema-builder": "^1.0.0",
+    "gql-schema-builder": "^1.0.1",
     "gql-anywhere": "^4.2.7",
-    "graphql-tag": "^2.10.3",
+    "graphql-tag": "^2.12.5",
     "graphql-tools": "4.0.7"
   },
   "devDependencies": {
