@@ -1,6 +1,6 @@
 {
   "name": "gql-lodash",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/index.js",
   "author": "Alex Vedmedenko <vedmalex@gmail.com>",
   "license": "MIT",
@@ -11,22 +11,20 @@
   },
   "dependencies": {
     "gql-schema-builder": "^1.0.0",
-    "graphql-anywhere": "^4.2.6",
+    "gql-anywhere": "^4.2.7",
     "graphql-tag": "^2.10.3",
     "graphql-tools": "4.0.7"
   },
   "devDependencies": {
-    "@types/jest": "25.1.4",
-    "@types/lodash": "4.14.149",
-    "graphql": "14.6.0",
-    "jest": "25.1.0",
-    "lodash": "4.17.15",
+    "@types/jest": "27.0.1",
+    "@types/lodash": "4.14.172",
+    "jest": "27.0.6",
     "ts-jest": "^25.2.1",
     "typescript": "3.8.3"
   },
   "peerDependencies": {
     "graphql": "14.6.0",
-    "lodash": "4.17.15"
+    "lodash": "4.17.21"
   },
   "gitHead": "ef0fa33d54101ca9c7c7a450fc6b7fc802a2c327"
 }
