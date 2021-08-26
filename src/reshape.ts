@@ -1,4 +1,4 @@
-import graphql from 'graphql-anywhere';
+import graphql from 'gql-anywhere';
 
 import { graphqlLodash } from './gql';
 

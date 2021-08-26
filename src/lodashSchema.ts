@@ -5,7 +5,7 @@ import gql from 'graphql-tag';
 
 import { Kind, StringValueNode } from 'graphql';
 
-const lodashProps = `
+const lodashProps = gql`
 map: Path
 keyBy: Path
 each: LodashOperations
