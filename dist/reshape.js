@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.filter = void 0;
 const gql_anywhere_1 = __importDefault(require("gql-anywhere"));
 const gql_1 = require("./gql");
 function filter(doc, data) {

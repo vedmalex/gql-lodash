@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.applyTransformations = void 0;
 const lodash_1 = require("lodash");
 function getType(v) {
     return Object.prototype.toString

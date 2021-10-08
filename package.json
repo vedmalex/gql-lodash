@@ -1,6 +1,6 @@
 {
   "name": "gql-lodash",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "main": "dist/index.js",
   "author": "Alex Vedmedenko <vedmalex@gmail.com>",
   "license": "MIT",
@@ -10,7 +10,7 @@
     "prepublish": "tsc --build tsconfig.json"
   },
   "dependencies": {
-    "gql-schema-builder": "^1.0.2",
+    "gql-schema-builder": "^1.0.3",
     "gql-anywhere": "^4.2.7",
     "graphql-tag": "^2.12.5",
     "graphql-tools": "4.0.7"
