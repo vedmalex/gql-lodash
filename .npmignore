@@ -1,26 +1,34 @@
+# Существующие исключения
 node_modules/
 .vscode/
 spec/
 test/
 *
+
+# Файлы конфигурации
 .prettierrc.js
-.eslint.js
-spec/
-test/
-!src/**/*
-!dist/**/*
-dist/**/*.test.*
-!package.json
-!README.md
-node_modules/
-.gitignore
-.rpt2_cache
-CHANGELOG.md
-rollup.*.js
+.eslintrc.js
 tsconfig.json
 tslint.json
-Gruntfile.js
 .travis.yml
+
+# Файлы сборки и задач
+rollup.*.js
+Gruntfile.js
 Makefile
 Cakefile
 Rakefile
+
+# Другие файлы
+.gitignore
+.rpt2_cache
+CHANGELOG.md
+
+# Включения
+!src/**/*
+!dist/**/*
+!package.json
+!README.md
+
+# Исключение тестовых файлов из dist
+dist/**/*.test.*

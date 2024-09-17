@@ -3,8 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.lodashAST = exports.ConvertTypeArgument = exports.DummyArgument = exports.LodashOperations = exports.Directives = exports.Predicate = exports.RegularExpression = exports.Path = void 0;
-const graphql_tools_1 = require("graphql-tools");
+const schema_1 = require("@graphql-tools/schema");
 const gql_schema_builder_1 = require("gql-schema-builder");
 const graphql_tag_1 = __importDefault(require("graphql-tag"));
 const graphql_1 = require("graphql");
@@ -220,11 +219,11 @@ function lodashAST() {
         let current = LodashSchema;
         LodashSchema.build();
         LodashSchema.fixSchema();
-        let schema = graphql_tools_1.makeExecutableSchema({
+        let schema = schema_1.makeExecutableSchema({
             typeDefs: current.schema,
             resolvers: current.resolvers,
             resolverValidationOptions: {
-                requireResolversForNonScalar: false,
+                requireResolversForNonScalar: 'ignore',
             },
         });
         _lodashAST = schema.getDirective('_');

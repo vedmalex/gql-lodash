@@ -1,5 +1,5 @@
 // tslint:disable:variable-name
-import { makeExecutableSchema } from 'graphql-tools';
+import { makeExecutableSchema } from '@graphql-tools/schema';
 import { Scalar, Input, Directive, Enum, Schema } from 'gql-schema-builder';
 import gql from 'graphql-tag';
 
@@ -235,7 +235,7 @@ export function lodashAST() {
       typeDefs: current.schema,
       resolvers: current.resolvers,
       resolverValidationOptions: {
-        requireResolversForNonScalar: false,
+        requireResolversForNonScalar: 'ignore',
       },
     });
     _lodashAST = schema.getDirective('_');

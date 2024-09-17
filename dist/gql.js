@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.graphqlLodash = void 0;
 const graphql_1 = require("graphql");
 const apollo_utilities_1 = require("apollo-utilities");
 const lodash_1 = require("lodash");

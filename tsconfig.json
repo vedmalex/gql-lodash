@@ -16,13 +16,17 @@
     "noImplicitAny": false,
     "allowSyntheticDefaultImports": false,
     "pretty": true,
-    "removeComments": true
+    "removeComments": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "types": []
   },
   "include": [
     "src/**/*"
   ],
   "exclude": [
     "**/__tests__",
-    "**/__mocks__"
+    "**/__mocks__",
+    "node_modules"
   ]
 }
